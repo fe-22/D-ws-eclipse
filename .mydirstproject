@@ -1,0 +1,71 @@
+package myfirstproject;
+
+import java.util.Scanner;
+
+public class scanner {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Digite seu nome completo:   ");
+		String nome = sc.nextLine();
+		System.out.println("seu nome e:   " + nome);
+		System.out.print("Digite como voce quer ser chamado?   ");
+		String chamado = sc.next();
+		System.out.println("voce quer ser chamado por:  " + chamado);
+		System.out.print("Qual sua idade?");
+		int idade = sc.nextInt();
+		System.out.println("Sua idade e:  " + idade + "anos");
+		System.out.print("Qual sua cor favorita?");
+		String cor = sc.next();
+		System.out.println("sua cor favorita e  " + cor + "   Eu também gosto");
+		System.out.print("qual jogo vc gosta?");
+		String jogo = sc.next();
+		System.out.println("Seu jogo favorito e:  " + jogo + "   que pena não sei jogar video game :( ");
+
+		System.out.print("vc gosta de hot dog? [s/n]");
+		String dog = sc.next();
+		if ("s".equals(dog)) {
+			System.out.print("Legal eu também gosto!" + dog + " O meu e sem batata palha...hum");
+		} else if ("n".equals(dog)) {
+			System.out.println("Que pena!");
+		}
+
+		System.out.println();
+		System.out.println("Vamos falar sobre suas notas agora:   ");
+
+		double nota1;
+		double nota2;
+		double nota3;
+		double nota4;
+
+		System.out.println("Entre com a 1º nota:  ");
+		nota1 = sc.nextDouble();
+		System.out.println("Vc digitou a nota:" + nota1);
+		System.out.println("Entre com a 2º nota:  ");
+		nota2 = sc.nextDouble();
+		System.out.println("Vc digitou a nota:  " + nota2);
+		System.out.println("Entre com a 3º nota:   ");
+		nota3 = sc.nextDouble();
+		System.out.println("Entre com a 4º nota:  ");
+		nota4 = sc.nextDouble();
+
+		double total = (nota1 + nota2 + nota3 + nota4);
+		System.out.println("Total das notas:  " + total);
+
+		double media = (total / 4);
+		System.out.println("Sua media final e:   " + media + "  total/4");
+
+		if (media >= 7.0) {
+			System.out.println("Aprovado, legal vc já esta pronto para a proxima fase de estudos Parabens!");
+			
+		
+		}else {
+			System.out.println("Reprovado, não fique triste, na proxima com um pouco mais de esforço vc vai conseguir!");
+		}
+		
+	
+		}
+
+	}
